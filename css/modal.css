@@ -19,12 +19,14 @@
 
 
 .modal{
-  min-width: 300px;
+  width: 80vw;
+  max-width: 600px;
   background: white;
   padding: 40px;
   border: 10px solid #FB5;
   box-shadow: 0 0 0 10px white;
-position: relative;
+  position: relative;
+  box-sizing: border-box;
 }
 
 @keyframes modal{
@@ -51,9 +53,7 @@ position: relative;
   right: -30px;
   position: absolute;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.3);
-  background-color: #E54;
-  font-size: 1.2rem;
-  color: white;
+  background-color: #E54 url('../img/fechar.svg') no-repeat center center;
   cursor: pointer;
 }
 
@@ -70,6 +70,8 @@ position: relative;
     padding:.7rem .5rem;
     box-sizing: border-box;
     font-weight: bold;
+    border: 2px solid #222;
+    border-radius: 0px;
   }
 
   .modal button[type="submit"]{
