@@ -1,4 +1,4 @@
-import outsideClick from './outsideClick.js';
+import outsideClick from './outsideclick.js';
 
 export default function initMenuMobile() {
   const menuButton = document.querySelector('[data-menu="button"]');
@@ -13,7 +13,6 @@ export default function initMenuMobile() {
       menuList.classList.remove('ativo');
       menuButton.classList.remove('ativo');
     })
-
   }
   eventos.forEach(evento => menuButton.addEventListener(evento, openMenu));
   }
